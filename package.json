@@ -46,6 +46,7 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "react": "^15.4.1"
+    "react": "^15.4.1",
+    "styled-components": "^1.2.1"
   }
 }
