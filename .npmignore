@@ -1,5 +1,3 @@
-example/
 src/
 .eslintrc
 .babelrc
-webpack.config.js
