@@ -51,8 +51,7 @@
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-test-renderer": "^15.4.1",
-    "sinon": "^1.17.6",
-    "webpack": "^1.14.0"
+    "sinon": "^1.17.6"
   },
   "dependencies": {
     "react": "^15.4.1",
