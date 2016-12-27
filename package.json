@@ -15,8 +15,10 @@
   },
   "keywords": [
     "loader",
+    "spinner",
     "react",
     "quotes",
+    "ui",
     "component",
     "loader-quotes",
     "quote-loader"
