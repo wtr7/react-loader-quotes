@@ -1,7 +1,7 @@
 {
   "name": "react-loader-quotes",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react component to replace traditional loader icons by showing quotes.",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "npm run build",
