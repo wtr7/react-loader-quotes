@@ -32,7 +32,7 @@ class ReactLoaderQuotes extends React.Component {
       currentQuotesIndex: 0
     };
 
-    this._startQuotes();
+    this.startQuotes();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -42,26 +42,28 @@ class ReactLoaderQuotes extends React.Component {
     }
   }
 
-  _getNextQuote(quotes) {
+  getNextQuote(quotes) {
     // if at the end of our quotes, then go back to the first quote
     if (this.state.currentQuotesIndex === quotes.length - 1) {
       return 0;
-    } else {
-      return this.state.currentQuotesIndex + 1;
     }
+
+    return this.state.currentQuotesIndex + 1;
   }
 
-  _getRandomQuote(quotes) {
+  getRandomQuote(quotes) {
     return Math.floor(Math.random() * quotes.length);
   }
 
-  _startQuotes() {
+  startQuotes() {
     const quotes = this.props.quotes;
     const speedInMilliseconds = this.props.speed * 1000;
 
     this.quotesInterval = setInterval(() => {
       this.setState({
-        currentQuotesIndex: (this.props.random) ? this._getRandomQuote(quotes) : this._getNextQuote(quotes)
+        currentQuotesIndex: (this.props.random) ?
+                              this.getRandomQuote(quotes) :
+                              this.getNextQuote(quotes)
       });
     }, speedInMilliseconds);
   }
@@ -78,7 +80,7 @@ class ReactLoaderQuotes extends React.Component {
         <Background />
         <Quotes>
           <Title>{this.props.quotes[this.state.currentQuotesIndex]}</Title>
-          <Loader></Loader>
+          <Loader />
         </Quotes>
       </Container>
     );

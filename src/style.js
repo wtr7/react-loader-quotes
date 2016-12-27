@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-const setContainer = ({loading}) => {
+const setContainer = ({ loading }) => {
   const display = !loading ? 'none' : 'inline-block';
 
   return styled.div`
@@ -14,7 +14,7 @@ const setContainer = ({loading}) => {
   `;
 };
 
-const setBackground = ({backgroundColorBackground, opacityBackground}) => {
+const setBackground = ({ backgroundColorBackground, opacityBackground }) => {
   return styled.div`
     position: fixed;
     left: 0;
@@ -25,7 +25,7 @@ const setBackground = ({backgroundColorBackground, opacityBackground}) => {
   `;
 };
 
-const setQuotes = ({backgroundColorQuotes}) => {
+const setQuotes = ({ backgroundColorQuotes }) => {
   return styled.div`
     position: relative;
     top: 50%;
@@ -41,7 +41,7 @@ const setQuotes = ({backgroundColorQuotes}) => {
   `;
 };
 
-const setTitle = ({fontSizeTitle, colorTitle, fontFamilyTitle}) => {
+const setTitle = ({ fontSizeTitle, colorTitle, fontFamilyTitle }) => {
   return styled.p`
     text-align: center;
     font-family: ${fontFamilyTitle};
@@ -62,7 +62,7 @@ const transition = keyframes`
   }
 `;
 
-const setLoader = ({speed, backgroundColorLoader}) => {
+const setLoader = ({ speed, backgroundColorLoader }) => {
   return styled.div`
     position: absolute;
     width: 0%;
