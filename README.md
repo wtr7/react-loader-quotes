@@ -27,3 +27,9 @@ opacityBackground: **0.5**
 fontSizeTitle: **'18px'**
 colorTitle: **'white'**
 fontFamilyTitle: **'Arial'**
+
+# Testing #
+
+```
+npm test
+```
