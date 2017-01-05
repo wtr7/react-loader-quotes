@@ -42,6 +42,10 @@ class ReactLoaderQuotes extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    clearInterval(this.quotesInterval);
+  }
+
   getNextQuote(quotes) {
     // if at the end of our quotes, then go back to the first quote
     if (this.state.currentQuotesIndex === quotes.length - 1) {
